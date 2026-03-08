@@ -193,8 +193,8 @@ describe.skipIf(!HAS_ANTHROPIC_AUTH)("Compaction with thinking models (Anthropic
 		return session;
 	}
 
-	it("should compact successfully with ***REMOVED*** and thinking level high", async () => {
-		const model = getModel("anthropic", "***REMOVED***-latest")!;
+	it("should compact successfully with claude-sonnet-4-5 and thinking level high", async () => {
+		const model = getModel("anthropic", "claude-sonnet-4-5")!;
 		createSession(model, "high");
 
 		// Send a simple prompt
