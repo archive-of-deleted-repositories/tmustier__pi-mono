@@ -32,6 +32,8 @@ describe("KeybindingsManager", () => {
 
 		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.pageUp"), ["pageUp"]);
 		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.pageDown"), ["pageDown"]);
+		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.halfPageUp"), []);
+		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.halfPageDown"), []);
 		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.previousPrompt"), ["ctrl+shift+up"]);
 		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.nextPrompt"), ["***REMOVED***"]);
 		assert.deepStrictEqual(keybindings.getKeys("tui.altScreen.top"), ["home"]);
